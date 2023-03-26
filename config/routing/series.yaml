@@ -1,0 +1,9 @@
+index:
+    path: /
+    controller: App\Controller\SeriesController::index
+    methods: [GET]
+
+save:
+    path: /
+    controller: App\Controller\SeriesController::save
+    methods: [POST]

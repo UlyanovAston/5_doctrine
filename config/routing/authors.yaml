@@ -1,0 +1,9 @@
+index:
+    path: /
+    controller: App\Controller\AuthorsController::index
+    methods: [GET]
+
+save:
+    path: /
+    controller: App\Controller\AuthorsController::save
+    methods: [POST]

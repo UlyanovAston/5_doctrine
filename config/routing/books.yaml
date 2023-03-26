@@ -1,0 +1,33 @@
+index:
+    path: /
+    controller: App\Controller\BooksController::index
+    methods: [GET]
+
+by_author:
+    path: /filters/authors/{authorId}/
+    controller: App\Controller\BooksController::filterByAuthor
+    methods: [GET]
+    requirements:
+        authorId: '\d+'
+
+by_page_count:
+    path: /filters/pages/{pageCount}/
+    controller: App\Controller\BooksController::filterByPageCount
+    methods: [GET]
+    requirements:
+        pageCount: '\d+'
+
+by_author_and_page_count:
+    path: /filters/authors/{authorId}/pages/{pageCount}/
+    controller: App\Controller\BooksController::filterByAuthorAndPageCount
+    methods: [GET]
+    requirements:
+        authorId: '\d+'
+        pageCount: '\d+'
+
+by_series:
+    path: /filters/series/{seriesId}/
+    controller: App\Controller\BooksController::filterBySeries
+    methods: [GET]
+    requirements:
+        seriesId: '\d+'

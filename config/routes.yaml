@@ -1,0 +1,14 @@
+authors:
+    resource: "routing/authors.yaml"
+    prefix: /authors
+    name_prefix: 'authors.'
+
+series:
+    resource: "routing/series.yaml"
+    prefix: /series
+    name_prefix: 'series.'
+
+books:
+    resource: "routing/books.yaml"
+    prefix: /books
+    name_prefix: 'books.'
